@@ -215,3 +215,35 @@ if __name__ == "__main__":
         for tag in car[TAGS_IDX]:
             assert tag in TAGS, f"{label}: unknown tag '{tag}'"
     print(f"All {len(CARS)} cars check out.")
+
+# ---- Single-value factors (each car has exactly one) ----
+COUNTRIES    = ["USA", "UK", "Germany", "Italy", "Japan", "South Korea"]
+BODY_TYPES   = ["Sedan", "Coupe", "Hatchback", "Convertible", "SUV", "Truck", "Wagon"]
+DRIVETRAINS  = ["FWD", "RWD", "AWD", "4WD"]
+FUEL_TYPES   = ["Gas", "Hybrid", "Electric"]
+
+# ---- Numeric factors ----
+# price_tier:  1 = under ~$12k, 2 = $12-25k, 3 = $25-45k, 4 = $45-80k, 5 = $80k+
+# reliability: 1 (temperamental) to 5 (bulletproof)
+# seats:       2 to 8
+PRICE_TIERS  = [1, 2, 3, 4, 5]
+RELIABILITY  = [1, 2, 3, 4, 5]
+
+# ---- Multi-value factor (each car has several) ----
+TAGS = [
+    # purpose
+    "first-car", "project-car", "daily-driver", "family", "collector", "status",
+    # ownership
+    "reliable", "cheap-to-maintain", "expensive-to-maintain", "fuel-efficient",
+    # driving feel
+    "fun-to-drive", "sporty", "fast", "supercar", "track-ready", "drift-friendly",
+    "tuner-friendly", "lightweight", "manual-available",
+    # comfort and practicality
+    "luxury", "comfortable", "spacious", "compact", "tech-heavy",
+    # capability
+    "off-road", "towing", "rugged",
+    # powertrain
+    "electric", "hybrid", "v8", "turbo", "rotary",
+    # style
+    "classic-style",
+]

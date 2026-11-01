@@ -227,7 +227,7 @@ FUEL_TYPES   = ["Gas", "Hybrid", "Electric"]
 # reliability: 1 (temperamental) to 5 (bulletproof)
 # seats:       2 to 8
 PRICE_TIERS  = [1, 2, 3, 4, 5]
-RELIABILITY  = [1, 2, 3, 4, 5]
+RELIABILITY_LEVELS  = [1, 2, 3, 4, 5]
 
 # ---- Multi-value factor (each car has several) ----
 TAGS = [
